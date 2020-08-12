@@ -32,3 +32,9 @@ export type quizShowPropType = {
     answers : string[],
     handleNext: (e:React.FormEvent<EventTarget>, ans:string) => void
 }
+
+export type timeType = {
+    "h": string,
+    "m": string,
+    "s": string
+}

@@ -8,6 +8,7 @@ import {questionType} from './../Types/Types';
 import Loading from './Loading';
 import Typography from '@material-ui/core/Typography';
 import Quiz from './Quiz';
+import Timer from './Timer';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -68,6 +69,12 @@ const QuizPage = () => {
     if(loading)
         return <Loading/>;
 
+    if(quizess.length === 0){
+        return (
+            <div>The page you are lokking for is not Found</div>
+        )
+    }
+
     return (
         <Fragment>
             {
@@ -78,7 +85,7 @@ const QuizPage = () => {
                         <Grid item xs={12}>
                             <Paper className={classes.paper}>
                             <Typography >
-                                    {count + 1} of 10
+                                    <Timer/>
                                 </Typography>
                                 <Typography >
                                     {count + 1} of 10

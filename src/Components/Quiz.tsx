@@ -11,8 +11,6 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     paper: {
       padding: theme.spacing(2),
-      display: 'flex',
-      justifyContent: "space-between"
     },
     button : {
         backgroundColor: 'rgb(19, 168, 158)',
@@ -24,8 +22,8 @@ const useStyles = makeStyles((theme: Theme) =>
 const Quiz = (props: quizShowPropType) => {
     const classes = useStyles();
 
-    const [selectedValue, setSelectedValue] = React.useState('');
-    const [disabled, setDisabled] = React.useState(true);
+    const [selectedValue, setSelectedValue] = useState('');
+    const [disabled, setDisabled] = useState(true);
 
     useEffect(() => {
         setSelectedValue('');
@@ -55,7 +53,6 @@ const Quiz = (props: quizShowPropType) => {
                         <Grid container spacing={3} style={{width: '95%', margin: '0px'}} key={index}>
                             <Grid item xs={12}>
                                 <Paper className={classes.paper}>
-                                    <Typography >
                                     <Radio
                                         checked={selectedValue === item}
                                         onChange={handleChange}
@@ -65,7 +62,9 @@ const Quiz = (props: quizShowPropType) => {
                                         name="radio-button-demo"
                                         inputProps={{ 'aria-label': item }}
                                         size="small"
-                                    /> {item}
+                                    /> 
+                                    <Typography style={{display: 'inline-block'}}>
+                                        {item}
                                     </Typography>
                                 </Paper>
                             </Grid>
