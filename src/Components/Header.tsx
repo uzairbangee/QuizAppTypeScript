@@ -23,7 +23,7 @@ const Header = () => {
         <Fragment>
             <AppBar position="static" className={classes.head}>
                 <Toolbar>
-                    <Link to={`/`} style={{textDecoration: 'none'}}>
+                    <Link to={`/`} style={{textDecoration: 'none', color: 'white'}}>
                         <Typography variant="h6" className={classes.title}>
                         Quiz App
                         </Typography>
