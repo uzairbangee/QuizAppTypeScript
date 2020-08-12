@@ -50,7 +50,7 @@ const Mode = (props : ModePropType) => {
                         <b>Quiz Duration :</b> 10 minutes
                     </Typography>
 
-                    <Link to={`/quiz/${props.ids}/${props.mode}`}>
+                    <Link to={`/quiz/${props.ids}/${props.mode}`} style={{textDecoration: 'none'}}>
                         <Button variant="contained" className={classes.button}>
                             Start Quiz
                         </Button>

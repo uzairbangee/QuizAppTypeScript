@@ -34,7 +34,7 @@ const Category = () => {
                 Welcome to Quiz App
             </Typography>
             <Typography className={classes.headingMain}> 
-                Class Name: Just for Fun
+                Class Name: Batch 2020
             </Typography>
             <div style={{width : '75%'}}>
                 {

@@ -45,7 +45,7 @@ export const data: dataType[] = [
         id : "18"
     },
     {
-        name : "Science: Mathematics<",
+        name : "Science: Mathematics",
         id : "19"
     },
     {
@@ -57,7 +57,7 @@ export const data: dataType[] = [
         id : "21"
     },
     {
-        name : "Geography<",
+        name : "Geography",
         id : "22"
     },
     {
@@ -69,7 +69,7 @@ export const data: dataType[] = [
         id : "24"
     },
     {
-        name : "Art<",
+        name : "Art",
         id : "25"
     },
     {
