@@ -77,7 +77,7 @@ const QuizPage = () => {
 
     return (
         <Fragment>
-            {
+            {/* {
                 count < 10
                 ?
                 <div className={classes.root}>
@@ -101,10 +101,10 @@ const QuizPage = () => {
                     handleNext={next}
                     />
                 </div>
-                :
+                : */}
                 <div className={classes.root}>
                     <Grid container spacing={3} style={{width: '95%', margin: '0px', display: "contents"}}>
-                        <Grid item xs={4}>
+                        <Grid item xs={12}>
                             <Paper style={{padding : '20px'}}>
                             <Typography >
                                     <b>Total Questions: </b> 10
@@ -120,7 +120,7 @@ const QuizPage = () => {
                     </Grid>
 
                     <Grid container spacing={3} style={{width: '95%', margin: '0px', display: "contents"}}>
-                        <Grid item xs={4}>
+                        <Grid item xs={12}>
                             <Paper style={{padding : '20px'}}>
                                 {
                                     score >= 7
@@ -137,7 +137,7 @@ const QuizPage = () => {
                         </Grid>
                     </Grid>
                 </div>
-                }
+                {/* } */}
         </Fragment>
     )
 }
