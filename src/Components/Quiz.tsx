@@ -6,6 +6,7 @@ import {quizShowPropType} from './../Types/Types';
 import Radio from '@material-ui/core/Radio';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import parse from 'html-react-parser';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -41,7 +42,7 @@ const Quiz = (props: quizShowPropType) => {
                 <Grid item xs={12}>
                     <Paper className={classes.paper}>
                         <Typography >
-                            {props.number + 1}. {props.question}
+                            {props.number + 1}. {parse(props.question)}
                         </Typography>
                     </Paper>
                 </Grid>
@@ -64,7 +65,7 @@ const Quiz = (props: quizShowPropType) => {
                                         size="small"
                                     /> 
                                     <Typography style={{display: 'inline-block'}}>
-                                        {item}
+                                        {parse(item)}
                                     </Typography>
                                 </Paper>
                             </Grid>
